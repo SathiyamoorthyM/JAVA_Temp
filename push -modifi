@@ -1,0 +1,234 @@
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder$ git clone https://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@github.com/SathiyamoorthyM/myworld.git
+Cloning into 'myworld'...
+warning: You appear to have cloned an empty repository.
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder$ cd myworld
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ ls
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ touch sample1.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ ls
+sample1.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ touch sample2.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ ls
+sample1.txt  sample2.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample1.txt
+	sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git add .
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample1.txt
+	new file:   sample2.txt
+
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git reset
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample1.txt
+	sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git add sample1.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample2.txt
+
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git add .
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample1.txt
+	new file:   sample2.txt
+
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git rm --cached sample1.txt
+rm 'sample1.txt'
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	sample1.txt
+
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git add .
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   sample1.txt
+	new file:   sample2.txt
+
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git commit -m "committed by sathya"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sathiyamoorthym@sathiyamoorthym-Lenovo-E4325.(none)')
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git config --global user.email "sathyam044@gmail.com"
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git config --global user.name "SathiyamoorthyM"
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git commit -m "commited by sathya"
+[main (root-commit) 6ef4e43] commited by sathya
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sample1.txt
+ create mode 100644 sample2.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ 
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SathiyamoorthyM/myworld.git
+ * [new branch]      main -> main
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 683 bytes | 683.00 KiB/s, done.
+From https://github.com/SathiyamoorthyM/myworld
+   6ef4e43..73435c7  main       -> origin/main
+Updating 6ef4e43..73435c7
+Fast-forward
+ sample1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 683 bytes | 341.00 KiB/s, done.
+From https://github.com/SathiyamoorthyM/myworld
+   73435c7..08ac7e5  main       -> origin/main
+Updating 73435c7..08ac7e5
+error: Your local changes to the following files would be overwritten by merge:
+	sample1.txt
+Please commit your changes or stash them before you merge.
+Aborting
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git stash
+Saved working directory and index state WIP on main: 73435c7 Update sample1.txt
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git pull
+Updating 73435c7..08ac7e5
+Fast-forward
+ sample1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git stash pop
+Auto-merging sample1.txt
+CONFLICT (content): Merge conflict in sample1.txt
+The stash entry is kept in case you need it again.
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both modified:   sample1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git push
+Everything up-to-date
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both modified:   sample1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git commit -m
+error: switch `m' requires a value
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git commit -m "commited by sathya"
+U	sample1.txt
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git push
+Everything up-to-date
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both modified:   sample1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sathiyamoorthym@sathiyamoorthym-Lenovo-E4325:~/My World/Untitled Folder/myworld$ 
+
+
